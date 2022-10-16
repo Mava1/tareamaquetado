@@ -56,7 +56,26 @@ h2{
     padding: 50px 20px ;
 }
 
-.prodcutos img{
-    width: 100px;
-    height: 80px;
+h5{
+    text-align: center;
+    text-decoration-color: aqua;
 }
+
+.staff{
+    background: rgb(189, 186, 186) }
+
+.mapa iframe{
+    aspect-ratio: 1.1;
+
+}
+
+.html {
+    scroll-behavior: 60px;
+
+}
+.scroll_section {
+    scroll-margin-top: 60px;
+
+}
+
+   
