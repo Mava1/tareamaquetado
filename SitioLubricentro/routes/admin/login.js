@@ -10,18 +10,10 @@ router.get('/', function(req, res, next) {
 
 router.get('/logout', function (req, res, next){
     req.session.destroy(); 
-    req.render('admin/login', {
+    res.render('admin/login', {
         layout: 'admin/layout'
     } );
 });
-
-router.get('/logout', function (req, res, next) {
-    req.session.destroy();
-    res.render('admin/login', {
-        layout: 'admin/layout'
-    });
-});
-
 
 router.post ('/', async(req, res, next) => {
     try{
@@ -40,7 +32,6 @@ router.post ('/', async(req, res, next) => {
         }
     } catch (error){ 
     console.log (error);}
-})
+});
 
-
-  module.exports = router;
+module.exports = router;
